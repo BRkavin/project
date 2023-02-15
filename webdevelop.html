@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <title>Document</title>
+  <style>
+    .select {
+      width: 100px;
+    }
+
+    #reg {
+      margin-left: 5rem;
+    }
+
+    #btn2 {
+      position: relative;
+      top: 4rem;
+      left: -8rem;
+    }
+  </style>
+
+</head>
+
+<body>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a href="#" class="navbar-brand">E-HORYZON'23</a>
+      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav">
+          <a href="index.html" class="nav-item nav-link active">Home</a>
+        </div>
+        <div class="navbar-nav ms-auto">
+          <a href="index.html" class="nav-item nav-link active">Register</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <section class="h-100 bg-dark">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col">
+          <div class="card card-registration my-4">
+            <div class="row g-0">
+              <div class="col-xl-6 d-none d-xl-block">
+                <img src="assets/img/webdevelop.jpg" alt="Sample photo" class="img-fluid"
+                  style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;" />
+              </div>
+              <div class="col-xl-6">
+                <div class="card-body p-md-5 text-black">
+                  <h3 class="mb-5 text-uppercase" id="reg">Registration</h3>
+                  <form method="post"
+                    action="https://script.google.com/a/macros/kongu.edu/s/AKfycbwUxkiNjfEDafbdV77AR-C7IbPqHhNdXMyw7DsVrn8cFfrHHCgg_e0jATzkeDKhdYP1/exec">
+                    <div class="row">
+                      <div class="col-md-6 mb-4">
+                        <div class="form-outline">
+                          <input type="text" id="form3Example1m" class="form-control form-control-lg"
+                            name="Team lead name" required />
+                          <label class="form-label" for="form3Example1m">Team lead name</label>
+                        </div>
+                      </div>
+                      <div class="col-md-6 mb-4">
+                        <div class="form-outline">
+                          <input type="text" id="form3Example1n" class="form-control form-control-lg"
+                            name="Team lead Roll_no" required />
+                          <label class="form-label" for="form3Example1n">Roll No</label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-6 mb-4">
+                        <div class="form-outline">
+                          <input type="text" id="form3Example1m1" class="form-control form-control-lg"
+                            name="Member name" required />
+                          <label class="form-label" for="form3Example1m1">Team Member Name</label>
+                        </div>
+                      </div>
+                      <div class="col-md-6 mb-4">
+                        <div class="form-outline">
+                          <input type="text" id="form3Example1n1" class="form-control form-control-lg"
+                            name="Member2 Roll_no" required />
+                          <label class="form-label" for="form3Example1n1">Roll No</label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- <div class="form-outline mb-4">
+                        <input type="text" id="form3Example8" class="form-control form-control-lg" />
+                        <label class="form-label" for="form3Example8"></label>
+                      </div> -->
+                    <div class="row">
+                      <div class="col-md-6 mb-4">
+
+                        Department: <select class="select" name="Department" required>
+                          <option value="CT-PG">CT-PG</option>
+                          <option value="ECE">ECE</option>
+                          <option value="EEE">EEE</option>
+                          <option value="CSE">CSE</option>
+                          <option value="IT">IT</option>
+                          <option value="CIVIL">CIVIL</option>
+                          <option value="MECH">MECH</option>
+                          <option value="CT-UG">CT-UG</option>
+                        </select>
+
+                      </div>
+                    </div>
+
+
+                    <div class="d-md-flex justify-content-start align-items-center mb-4 py-2">
+
+                      <h6 class="mb-0 me-4">Year: </h6>
+
+                      <div class="form-check form-check-inline mb-0 me-4">
+                        <input class="form-check-input" type="radio" name="year" id="femaleGender" value="I" />
+                        <label class="form-check-label" for="First">I</label>
+                      </div>
+
+                      <div class="form-check form-check-inline mb-0 me-4">
+                        <input class="form-check-input" type="radio" name="year" id="maleGender" value="II" />
+                        <label class="form-check-label" for="Second">II</label>
+                      </div>
+
+                      <div class="form-check form-check-inline mb-0">
+                        <input class="form-check-input" type="radio" name="year" id="otherGender" value="III" />
+                        <label class="form-check-label" for="otherGender">III</label>
+                      </div>
+                      <div class="form-check form-check-inline mb-0">
+                        <input class="form-check-input" type="radio" name="year" id="otherGender" value="IV" />
+                        <label class="form-check-label" for="otherGender">IV</label>
+                      </div>
+                    </div>
+
+
+
+                    <div class="form-outline mb-4">
+                      <input type="text" maxlength="10" id="form3Example9" class="form-control form-control-lg"
+                        name="mobile_no" required />
+                      <label class="form-label" for="form3Example9">Mobile no</label>
+                    </div>
+
+                    <div class="form-outline mb-4">
+                      <input type="text" id="form3Example97" class="form-control form-control-lg" name="email_id"
+                        required />
+                      <label class="form-label" for="form3Example97">Team lead Email ID</label>
+                    </div>
+
+                    <div class="form-outline mb-4">
+                      <input type="text" id="form3Example97" maxlength="12" class="form-control form-control-lg"
+                        name="transcation_id" required />
+                      <label class="form-label" for="form3Example97">Transcation_id</label>
+                    </div>
+
+                    <div class="d-flex justify-content-end pt-3" id="btn2">
+                      <a href="https://forms.gle/KD9WnehyVP8sA1hW9" type="button"
+                        class="btn btn-warning btn-lg ms-2">payment</a>
+                    </div>
+                    <div class="d-flex justify-content-end pt-3">
+                      <button type="submit" class="btn btn-warning btn-lg ms-2">register</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
